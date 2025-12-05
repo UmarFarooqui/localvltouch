@@ -1,4 +1,4 @@
-# Meridian Landing Page
+# LocalVLTouch Landing Page
 
 AI-powered touchscreen platform landing page. Local first, privacy focused.
 
@@ -20,14 +20,14 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git remote add origin https://github.com/YOUR_USERNAME/localvltouch.git
 git push -u origin main
 
 # 3. Enable GitHub Pages
 # Go to Settings → Pages → Deploy from branch → main → / (root)
 
 # 4. Your site is live at:
-# https://YOUR_USERNAME.github.io/YOUR_REPO/
+# https://YOUR_USERNAME.github.io/localvltouch/
 ```
 
 ## Setting Up Contact Form
@@ -79,7 +79,7 @@ landing-page-v2/
 
 ### Change Company Name
 
-Search and replace "Meridian" in `index.html`.
+Search and replace "LocalVLTouch" in `index.html` if you want a different brand name.
 
 ### Update Colors
 
