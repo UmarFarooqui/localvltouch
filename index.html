@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meridian | AI-Powered Touchscreen Platform</title>
+    <meta name="description" content="Intelligent touchscreen displays with local AI vision, facial recognition, and RTOS performance. Thin client architecture for smart home, industrial, and IoT applications.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">Meridian</span>
+            </a>
+            <div class="nav-links">
+                <a href="#problem">Problem</a>
+                <a href="#platform">Platform</a>
+                <a href="#applications">Applications</a>
+                <a href="#about">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Local AI • Offline First • Privacy Focused
+                </div>
+                <h1 class="hero-title">
+                    Intelligent Touchscreens<br>
+                    <span class="highlight">With Local AI Vision</span>
+                </h1>
+                <p class="hero-subtitle">
+                    High-performance RTOS-based displays with on-device facial recognition, 
+                    AI agent connectivity, and optional local VLM — all running offline, 
+                    without cloud dependency.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#platform" class="btn btn-secondary">Explore Platform</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="system-diagram">
+                    <div class="system-touchscreen">
+                        <div class="device-frame">
+                            <div class="device-screen">
+                                <div class="screen-content">
+                                    <div class="face-scan-ui">
+                                        <div class="scan-ring"></div>
+                                        <span class="scan-text">Face Recognized</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="device-label">AI Touchscreen</span>
+                    </div>
+                    <div class="system-connection">
+                        <div class="connection-line"></div>
+                        <span class="connection-label">Local Network</span>
+                    </div>
+                    <div class="system-vlm-box">
+                        <div class="vlm-frame">
+                            <div class="vlm-leds">
+                                <span class="led led-active"></span>
+                                <span class="led"></span>
+                                <span class="led"></span>
+                            </div>
+                            <div class="vlm-vents"></div>
+                        </div>
+                        <span class="device-label">Local VLM Box</span>
+                        <span class="device-sublabel">Optional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Problem</span>
+                <h2>Current solutions fall short</h2>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">☁️</div>
+                    <h3>Cloud Dependency</h3>
+                    <p>Most "smart" displays require constant internet connectivity. When the cloud goes down, your device becomes useless. Your data travels to remote servers you don't control.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🐌</div>
+                    <h3>Heavy Operating Systems</h3>
+                    <p>Android and Linux-based panels are bloated, slow to boot, and consume excessive resources. They're designed for general computing, not dedicated HMI applications.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🔒</div>
+                    <h3>Privacy Concerns</h3>
+                    <p>Facial recognition and voice commands processed in the cloud mean your biometric data leaves your premises. For many applications, this is simply not acceptable.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🧩</div>
+                    <h3>Fragmented Solutions</h3>
+                    <p>You need separate hardware, separate software, separate AI services — all from different vendors. Integration is your problem, and so is ongoing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section class="platform" id="platform">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Platform</span>
+                <h2>Complete system, delivered as one</h2>
+                <p class="section-desc">Hardware and software designed together, optimized for local AI and real-time performance.</p>
+            </div>
+            
+            <!-- System Overview -->
+            <div class="platform-system">
+                <div class="platform-component component-main">
+                    <div class="component-visual">
+                        <div class="touchscreen-render">
+                            <div class="ts-frame">
+                                <div class="ts-screen">
+                                    <div class="ts-ui-demo">
+                                        <div class="ui-row">
+                                            <div class="ui-widget"></div>
+                                            <div class="ui-widget"></div>
+                                        </div>
+                                        <div class="ui-face-widget">
+                                            <div class="face-icon"></div>
+                                        </div>
+                                        <div class="ui-nav">
+                                            <div class="nav-dot active"></div>
+                                            <div class="nav-dot"></div>
+                                            <div class="nav-dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-info">
+                        <h3>AI Touchscreen Display</h3>
+                        <p class="component-desc">Thin client architecture — powerful enough for AI vision, light enough to stay responsive. Acts as an intelligent interface to your hub, panel, or automation system.</p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <span class="feature-icon">⚡</span>
+                                <div>
+                                    <strong>High Performance MCU</strong>
+                                    <p>Dual RISC-V processor running at up to 400 MHz, designed for HMI applications and edge computing with rich I/O capabilities.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📡</span>
+                                <div>
+                                    <strong>Comprehensive Connectivity</strong>
+                                    <p>2.4 and 5 GHz dual-band Wi-Fi 6, Bluetooth 5 (LE), and 802.15.4 for Thread, Zigbee, Matter, HomeKit, and MQTT support.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">👤</span>
+                                <div>
+                                    <strong>On-Device AI Vision</strong>
+                                    <p>Facial recognition for secure operations, processed entirely on the device. No cloud, no external servers, no privacy compromise.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎥</span>
+                                <div>
+                                    <strong>Video Capabilities</strong>
+                                    <p>Hardware video encoding for WebRTC streaming. Display IP camera feeds or use built-in camera for video intercom applications.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🔌</span>
+                                <div>
+                                    <strong>Expansion Ready</strong>
+                                    <p>Available I/O for adding 24 GHz radar for 3D person sensing, dual cameras, co-processors for Z-Wave, proprietary wireless, or RS-485 bus protocols.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">⏱️</span>
+                                <div>
+                                    <strong>RTOS Foundation</strong>
+                                    <p>Real-time operating system delivers consistent, predictable performance — faster and more reliable than Linux or Android-based alternatives.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="platform-component component-secondary">
+                    <div class="component-info">
+                        <div class="optional-badge">Optional Add-On</div>
+                        <h3>Local VLM Box</h3>
+                        <p class="component-desc">For applications requiring natural language understanding and visual reasoning — completely offline.</p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <span class="feature-icon">🧠</span>
+                                <div>
+                                    <strong>Offline AI Processing</strong>
+                                    <p>40 TOPS AI acceleration module that runs 7B VLM models locally. Ask questions, get context-aware answers — no internet required.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎯</span>
+                                <div>
+                                    <strong>Fine-Tuned for Your Use Case</strong>
+                                    <p>VLM can be customized with your RAG data to provide tailored responses specific to your application domain.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🛡️</span>
+                                <div>
+                                    <strong>Safe AI Guardrails</strong>
+                                    <p>Built-in safety mechanisms ensure appropriate, reliable responses for consumer and enterprise deployments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-visual">
+                        <div class="vlm-box-render">
+                            <div class="vlm-body">
+                                <div class="vlm-front">
+                                    <div class="vlm-indicator"></div>
+                                    <div class="vlm-ports">
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                    </div>
+                                </div>
+                                <div class="vlm-side"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Display Sizes -->
+            <div class="display-sizes">
+                <h3>Multiple Display Sizes</h3>
+                <p>From compact interfaces to full tablet experiences — same platform, same software stack.</p>
+                <div class="sizes-showcase">
+                    <div class="size-item">
+                        <div class="size-visual size-4">
+                            <div class="size-screen"></div>
+                        </div>
+                        <span class="size-label">4" Compact</span>
+                        <span class="size-use">Toys, Thermostats</span>
+                    </div>
+                    <div class="size-item">
+                        <div class="size-visual size-7">
+                            <div class="size-screen"></div>
+                        </div>
+                        <span class="size-label">7" Standard</span>
+                        <span class="size-use">Home Panels, Intercoms</span>
+                    </div>
+                    <div class="size-item">
+                        <div class="size-visual size-10">
+                            <div class="size-screen"></div>
+                        </div>
+                        <span class="size-label">10" Large</span>
+                        <span class="size-use">Factory Floor, Smart Hubs</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Customization -->
+            <div class="customization">
+                <div class="custom-content">
+                    <h3>Built for Your Brand</h3>
+                    <p>We deliver complete hardware and software solutions tailored to your requirements.</p>
+                    <ul class="custom-list">
+                        <li>Custom branding and logos on hardware</li>
+                        <li>Light or dark body color options</li>
+                        <li>GUI light and dark mode themes</li>
+                        <li>Port your existing interface to our platform</li>
+                        <li>VLM fine-tuning with your domain knowledge</li>
+                        <li>Custom expansion modules and sensors</li>
+                    </ul>
+                </div>
+                <div class="custom-visual">
+                    <div class="custom-device light-mode">
+                        <div class="cd-screen light"></div>
+                    </div>
+                    <div class="custom-device dark-mode">
+                        <div class="cd-screen dark"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Differentiators -->
+    <section class="differentiators">
+        <div class="container">
+            <div class="diff-grid">
+                <div class="diff-card">
+                    <div class="diff-icon">🏠</div>
+                    <h3>Local First</h3>
+                    <p>All core functionality runs on your premises. No cloud accounts, no subscriptions, no data leaving your network.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-icon">📦</div>
+                    <h3>One-Time Purchase</h3>
+                    <p>Touchscreen and VLM are one-time costs. Engineering hours available for customization, porting, and expansion.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-icon">🔗</div>
+                    <h3>Thin Client Architecture</h3>
+                    <p>No heavy processes on the display. Clean messaging interface with your hub, panel, or automation system.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-icon">🤖</div>
+                    <h3>AI Agent Ready</h3>
+                    <p>Connect to local AI agents like Qwen3 VL or cloud-based services. MCP support for extensible AI workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications" id="applications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Applications</span>
+                <h2>Where Meridian fits</h2>
+            </div>
+            
+            <div class="apps-grid">
+                <div class="app-card">
+                    <div class="app-icon">🏠</div>
+                    <h3>Alarm & Automation Touchscreens</h3>
+                    <p>Intelligent display paired with your hub or panel. Facial recognition for secure disarm, natural language control, and seamless integration with existing automation systems.</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">🌐</div>
+                    <h3>IoT Solutions</h3>
+                    <p>Rich connectivity options — Thread, Zigbee, Matter, HomeKit, MQTT — make this the ideal interface for IoT deployments. Display sensor data, control devices, monitor systems.</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">🏭</div>
+                    <h3>Industrial Automation</h3>
+                    <p>Real-time operating system delivers consistent performance for machine interfaces. Expansion options for RS-485 bus protocols and industrial sensors. Rugged and reliable.</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">🤖</div>
+                    <h3>LLM Robots</h3>
+                    <p>Expressive face display with local AI vision and VLM connectivity. Perfect for social robots, assistants, and interactive installations requiring natural interaction.</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">🧒</div>
+                    <h3>Kids Learning Companions</h3>
+                    <p>Safe, offline AI with built-in guardrails. No inappropriate content, no data collection, no cloud dependency. Parents can trust what their children interact with.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Empty for now) -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About</span>
+                <h2>Coming soon</h2>
+                <p class="section-desc">More information about our team and mission will be available here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Empty for now) -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-desc">Common questions and answers will be added here soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2>Let's discuss your project</h2>
+                    <p>Tell us about your application. We'll respond within 24 hours to schedule a conversation.</p>
+                    
+                    <div class="contact-features">
+                        <div class="contact-feature">
+                            <span class="cf-icon">✓</span>
+                            <span>Free initial consultation</span>
+                        </div>
+                        <div class="contact-feature">
+                            <span class="cf-icon">✓</span>
+                            <span>NDA available on request</span>
+                        </div>
+                        <div class="contact-feature">
+                            <span class="cf-icon">✓</span>
+                            <span>Custom solutions for your needs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="application">Application Area *</label>
+                        <select id="application" name="application" required>
+                            <option value="">Select one...</option>
+                            <option value="alarm-automation">Alarm & Automation</option>
+                            <option value="iot">IoT Solutions</option>
+                            <option value="industrial">Industrial Automation</option>
+                            <option value="robotics">LLM Robots</option>
+                            <option value="education">Kids Learning / Education</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell us about your project *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="What are you building? What challenges are you facing?" required></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="New Contact from Meridian Website">
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    <p class="form-note">Your information is kept private and never shared.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">◈</span>
+                        <span class="logo-text">Meridian</span>
+                    </a>
+                    <p>AI-powered touchscreen platform.<br>Local first. Privacy focused.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Platform</h4>
+                        <a href="#platform">Overview</a>
+                        <a href="#applications">Applications</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#about">About</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Meridian. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
