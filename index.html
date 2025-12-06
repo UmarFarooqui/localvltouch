@@ -30,7 +30,7 @@
                 <a href="#contact">Contact</a>
             </div>
             <div class="nav-actions">
-                <a href="#contact" class="btn-waitlist">Join Waitlist</a>
+                <a href="#waitlist" class="btn-waitlist">Join Waitlist</a>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
                     <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -455,6 +455,69 @@
                 <span class="section-tag">FAQ</span>
                 <h2>Frequently Asked Questions</h2>
                 <p class="section-desc">Common questions and answers will be added here soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section -->
+    <section class="waitlist" id="waitlist">
+        <div class="container">
+            <div class="waitlist-wrapper">
+                <div class="waitlist-content">
+                    <span class="section-tag">Early Access</span>
+                    <h2>Join Our Waitlist</h2>
+                    <p class="waitlist-desc">Thank you for your interest in LocalVLTouch! Join our waitlist to receive updates on our development progress and be among the first to access our platform.</p>
+                    
+                    <div class="waitlist-benefits">
+                        <div class="waitlist-benefit">
+                            <span class="wb-icon">📬</span>
+                            <div>
+                                <strong>Quarterly Updates</strong>
+                                <span>Stay informed on development milestones and new features</span>
+                            </div>
+                        </div>
+                        <div class="waitlist-benefit">
+                            <span class="wb-icon">🚀</span>
+                            <div>
+                                <strong>Early Access</strong>
+                                <span>Be first in line when we launch</span>
+                            </div>
+                        </div>
+                        <div class="waitlist-benefit">
+                            <span class="wb-icon">💬</span>
+                            <div>
+                                <strong>Direct Communication</strong>
+                                <span>Questions? Reach us at info@localvltouch.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="waitlist-form-container" id="signUp">
+                    <h3>Sign up for updates</h3>
+                    <form class="waitlist-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="waitlist-name">Name *</label>
+                            <input type="text" id="waitlist-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="waitlist-email">Email *</label>
+                            <input type="email" id="waitlist-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="waitlist-company">Company</label>
+                            <input type="text" id="waitlist-company" name="company">
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="dealer_interest">
+                                <span>I'm interested in becoming a LocalVLTouch dealer/partner</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Join Waitlist</button>
+                    </form>
+                    <p class="form-note">We respect your privacy. No spam, ever.</p>
+                </div>
             </div>
         </div>
     </section>

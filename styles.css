@@ -1610,6 +1610,149 @@ strong {
 }
 
 /* =========================================
+   Waitlist Section
+   ========================================= */
+.waitlist {
+    padding: var(--space-5xl) 0;
+    background: var(--color-bg-elevated);
+}
+
+.waitlist-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4xl);
+    align-items: start;
+}
+
+.waitlist-content h2 {
+    margin-bottom: var(--space-md);
+}
+
+.waitlist-desc {
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-2xl);
+    line-height: 1.7;
+}
+
+.waitlist-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.waitlist-benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+}
+
+.wb-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.waitlist-benefit div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.waitlist-benefit strong {
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.waitlist-benefit span {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+/* Waitlist Form */
+.waitlist-form-container {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.waitlist-form-container h3 {
+    margin-bottom: var(--space-xl);
+    font-size: 1.25rem;
+}
+
+.waitlist-form .form-group {
+    margin-bottom: var(--space-lg);
+}
+
+.waitlist-form .form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-sm);
+}
+
+.waitlist-form .form-group input[type="text"],
+.waitlist-form .form-group input[type="email"] {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 0.9375rem;
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition: border-color var(--transition-fast);
+}
+
+.waitlist-form .form-group input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.checkbox-group {
+    margin-bottom: var(--space-xl) !important;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.btn-full {
+    width: 100%;
+    justify-content: center;
+}
+
+.form-note {
+    margin-top: var(--space-md);
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .waitlist-wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+}
+
+/* =========================================
    Contact Section
    ========================================= */
 .contact {
