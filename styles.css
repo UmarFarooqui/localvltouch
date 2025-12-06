@@ -31,37 +31,6 @@
     
     /* Nav background */
     --color-nav-bg: rgba(245, 245, 247, 0.9);
-}
-
-/* Dark Theme */
-[data-theme="dark"] {
-    --color-bg: #0a0a1a;
-    --color-bg-elevated: #0f0f24;
-    --color-bg-card: #141432;
-    --color-border: rgba(255, 255, 255, 0.08);
-    --color-border-hover: rgba(255, 255, 255, 0.15);
-    
-    --color-text: #ffffff;
-    --color-text-secondary: #a8a8c0;
-    --color-text-muted: #6a6a8a;
-    
-    --color-primary: #3b82f6;
-    --color-primary-dim: rgba(59, 130, 246, 0.15);
-    --color-primary-glow: rgba(59, 130, 246, 0.3);
-    
-    --color-accent: #818cf8;
-    --color-accent-dim: rgba(129, 140, 248, 0.15);
-    
-    --color-surface: rgba(255, 255, 255, 0.03);
-    
-    /* Device colors for dark mode */
-    --color-device-frame: linear-gradient(145deg, #2a2a3a, #1a1a2a);
-    --color-device-screen: linear-gradient(135deg, #0f0f1a, #1a1a28);
-    --color-device-shadow: rgba(0, 0, 0, 0.4);
-    
-    /* Nav background */
-    --color-nav-bg: rgba(10, 10, 26, 0.9);
-}
     
     /* Typography */
     --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -94,6 +63,36 @@
     /* Container */
     --container-max: 1140px;
     --container-padding: 1.5rem;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --color-bg: #0a0a1a;
+    --color-bg-elevated: #0f0f24;
+    --color-bg-card: #141432;
+    --color-border: rgba(255, 255, 255, 0.08);
+    --color-border-hover: rgba(255, 255, 255, 0.15);
+    
+    --color-text: #ffffff;
+    --color-text-secondary: #a8a8c0;
+    --color-text-muted: #6a6a8a;
+    
+    --color-primary: #3b82f6;
+    --color-primary-dim: rgba(59, 130, 246, 0.15);
+    --color-primary-glow: rgba(59, 130, 246, 0.3);
+    
+    --color-accent: #818cf8;
+    --color-accent-dim: rgba(129, 140, 248, 0.15);
+    
+    --color-surface: rgba(255, 255, 255, 0.03);
+    
+    /* Device colors for dark mode */
+    --color-device-frame: linear-gradient(145deg, #2a2a3a, #1a1a2a);
+    --color-device-screen: linear-gradient(135deg, #0f0f1a, #1a1a28);
+    --color-device-shadow: rgba(0, 0, 0, 0.4);
+    
+    /* Nav background */
+    --color-nav-bg: rgba(10, 10, 26, 0.9);
 }
 
 /* Reset & Base */
