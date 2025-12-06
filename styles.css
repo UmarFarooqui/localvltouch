@@ -1,19 +1,19 @@
 /* =========================================
-   Meridian Landing Page Styles v2
+   LocalVLTouch Landing Page Styles v2
    ========================================= */
 
 /* CSS Variables */
 :root {
-    /* Colors */
-    --color-bg: #08080c;
-    --color-bg-elevated: #0e0e14;
-    --color-bg-card: #141420;
-    --color-border: rgba(255, 255, 255, 0.06);
-    --color-border-hover: rgba(255, 255, 255, 0.12);
+    /* Colors - Dark Navy Blue Theme (inspired by Kourai) */
+    --color-bg: #0a0a1a;
+    --color-bg-elevated: #0f0f24;
+    --color-bg-card: #141432;
+    --color-border: rgba(255, 255, 255, 0.08);
+    --color-border-hover: rgba(255, 255, 255, 0.15);
     
     --color-text: #ffffff;
-    --color-text-secondary: #9898a8;
-    --color-text-muted: #5a5a6a;
+    --color-text-secondary: #a8a8c0;
+    --color-text-muted: #6a6a8a;
     
     --color-primary: #00d4aa;
     --color-primary-dim: rgba(0, 212, 170, 0.12);
@@ -22,7 +22,7 @@
     --color-accent: #818cf8;
     --color-accent-dim: rgba(129, 140, 248, 0.12);
     
-    --color-surface: rgba(255, 255, 255, 0.03);
+    --color-surface: rgba(255, 255, 255, 0.04);
     
     /* Typography */
     --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
