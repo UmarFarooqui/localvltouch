@@ -175,6 +175,45 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // =========================================
+    // Video Caption Animation Sync
+    // =========================================
+    const assistantVideo = document.querySelector('.assistant-video');
+    const assistantUI = document.querySelector('.assistant-ui');
+    
+    if (assistantVideo && assistantUI) {
+        // Reset animations when video loops
+        assistantVideo.addEventListener('ended', () => {
+            // Video will loop automatically, reset caption animations
+            restartCaptionAnimations();
+        });
+        
+        // Also handle timeupdate for seamless looping
+        assistantVideo.addEventListener('timeupdate', () => {
+            // Reset animations slightly before video ends for seamless loop
+            if (assistantVideo.duration - assistantVideo.currentTime < 0.1) {
+                restartCaptionAnimations();
+            }
+        });
+    }
+    
+    function restartCaptionAnimations() {
+        const captions = document.querySelectorAll('.caption, .check-item, .check-icon');
+        
+        // Remove animations
+        captions.forEach(el => {
+            el.style.animation = 'none';
+            el.offsetHeight; // Trigger reflow
+        });
+        
+        // Re-add animations after a brief delay
+        setTimeout(() => {
+            captions.forEach(el => {
+                el.style.animation = '';
+            });
+        }, 50);
+    }
+    
 });
 
 // =========================================
