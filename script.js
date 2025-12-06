@@ -1,8 +1,28 @@
 // =========================================
-// Meridian Landing Page JavaScript v2
+// LocalVLTouch Landing Page JavaScript v2
 // =========================================
 
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // =========================================
+    // Theme Toggle (Dark/Light Mode)
+    // =========================================
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    }
     
     // =========================================
     // Smooth Scroll for Navigation Links
@@ -39,21 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // =========================================
-    // Navigation Background on Scroll
-    // =========================================
-    const nav = document.querySelector('.nav');
-    
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-        
-        if (currentScroll > 100) {
-            nav.style.background = 'rgba(8, 8, 12, 0.95)';
-        } else {
-            nav.style.background = 'rgba(8, 8, 12, 0.85)';
-        }
-    });
-    
-    // =========================================
     // Mobile Menu Toggle
     // =========================================
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -65,16 +70,17 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinksContainer.classList.toggle('mobile-open');
             
             if (navLinksContainer.classList.contains('mobile-open')) {
+                const isDark = html.getAttribute('data-theme') === 'dark';
                 navLinksContainer.style.display = 'flex';
                 navLinksContainer.style.flexDirection = 'column';
                 navLinksContainer.style.position = 'absolute';
                 navLinksContainer.style.top = '72px';
                 navLinksContainer.style.left = '0';
                 navLinksContainer.style.right = '0';
-                navLinksContainer.style.background = 'rgba(8, 8, 12, 0.98)';
+                navLinksContainer.style.background = isDark ? 'rgba(10, 10, 26, 0.98)' : 'rgba(245, 245, 247, 0.98)';
                 navLinksContainer.style.padding = '1.5rem';
                 navLinksContainer.style.gap = '1rem';
-                navLinksContainer.style.borderBottom = '1px solid rgba(255, 255, 255, 0.06)';
+                navLinksContainer.style.borderBottom = '1px solid var(--color-border)';
                 navLinksContainer.style.backdropFilter = 'blur(20px)';
             } else {
                 navLinksContainer.removeAttribute('style');
