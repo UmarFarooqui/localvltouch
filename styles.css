@@ -578,7 +578,7 @@ strong {
     transform: translateX(-50%);
     font-size: 0.5rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     color: #6a6a7a;
     text-transform: uppercase;
 }
@@ -590,12 +590,18 @@ strong {
 .device-screen {
     width: 100%;
     height: 100%;
-    background: var(--color-device-screen);
+    background: #ffffff;
     border-radius: var(--radius-lg);
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .device-screen {
+    background: var(--color-device-screen);
+    border: none;
 }
 
 .screen-content {
@@ -603,8 +609,10 @@ strong {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: var(--space-lg) var(--space-sm);
 }
 
 /* AI Assistant UI */
@@ -612,43 +620,143 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-md);
-    padding: var(--space-md);
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 .assistant-avatar {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, var(--color-primary), #818cf8);
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    overflow: hidden;
+    margin-top: var(--space-xl);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #f0f0f5, #e0e0e8);
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: avatar-pulse 3s ease-in-out infinite;
+    position: relative;
+}
+
+/* CSS-generated professional avatar */
+.assistant-avatar::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #d4a574 0%, #c49464 30%, #b08454 60%, #4a6741 60%, #3d5635 100%);
+    border-radius: 50%;
+}
+
+.assistant-avatar::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #e8c9a8;
+    border-radius: 50%;
+    top: 18px;
 }
 
 .assistant-avatar svg {
+    display: none;
+}
+
+/* Avatar with tie - professional look */
+.assistant-avatar-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Face */
+.avatar-face {
+    position: absolute;
     width: 36px;
-    height: 36px;
-    color: #ffffff;
+    height: 42px;
+    background: linear-gradient(180deg, #e8c9a8 0%, #dbb896 100%);
+    border-radius: 50% 50% 45% 45%;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-@keyframes avatar-pulse {
-    0%, 100% { 
-        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
-        transform: scale(1);
-    }
-    50% { 
-        box-shadow: 0 0 20px 8px rgba(37, 99, 235, 0.1);
-        transform: scale(1.02);
-    }
+/* Hair */
+.avatar-hair {
+    position: absolute;
+    width: 40px;
+    height: 22px;
+    background: #8b6914;
+    border-radius: 50% 50% 0 0;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+/* Suit/shoulders */
+.avatar-body {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+    border-radius: 30px 30px 0 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Shirt */
+.avatar-shirt {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background: #ffffff;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+}
+
+/* Tie */
+.avatar-tie {
+    position: absolute;
+    width: 8px;
+    height: 20px;
+    background: linear-gradient(180deg, #c0392b 0%, #962d22 100%);
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(20% 0%, 80% 0%, 60% 100%, 40% 100%);
+}
+
+.avatar-tie::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background: #c0392b;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(0% 50%, 50% 100%, 100% 50%, 50% 0%);
+}
+
+/* Subtitle text at bottom */
 .assistant-text {
-    font-size: 0.75rem;
-    color: #ffffff;
+    font-size: 0.625rem;
+    color: #1a1a2e;
     font-weight: 500;
-    opacity: 0.9;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-sm);
+}
+
+[data-theme="dark"] .assistant-text {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
 }
 
 /* Legacy face scan UI (keeping for reference) */
