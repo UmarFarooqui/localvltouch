@@ -27,9 +27,10 @@
                 <a href="#applications">Applications</a>
                 <a href="#about">About</a>
                 <a href="#faq">FAQ</a>
-                <a href="#contact" class="nav-cta">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="nav-actions">
+                <a href="#contact" class="btn-waitlist">Join Waitlist</a>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
                     <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -74,7 +75,7 @@
                 </h1>
                 <p class="hero-subtitle">
                     High-performance RTOS-based displays with on-device facial recognition, 
-                    AI agent connectivity, and optional local VLM — all running offline, 
+                    AI agent connectivity, and local VLM — all running offline, 
                     without cloud dependency.
                 </p>
                 <div class="hero-cta">
@@ -86,14 +87,21 @@
                 <div class="system-diagram">
                     <div class="system-touchscreen">
                         <div class="device-frame">
+                            <div class="device-camera"></div>
                             <div class="device-screen">
                                 <div class="screen-content">
-                                    <div class="face-scan-ui">
-                                        <div class="scan-ring"></div>
-                                        <span class="scan-text">Face Recognized</span>
+                                    <div class="assistant-ui">
+                                        <div class="assistant-avatar">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <circle cx="12" cy="8" r="4"></circle>
+                                                <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="assistant-text">How can I help you?</span>
                                     </div>
                                 </div>
                             </div>
+                            <div class="device-branding">DealerX</div>
                         </div>
                         <span class="device-label">AI Touchscreen</span>
                     </div>
