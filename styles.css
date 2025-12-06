@@ -671,7 +671,6 @@ strong {
     left: 0;
     right: 0;
     opacity: 0;
-    visibility: hidden;
 }
 
 /* 
@@ -685,47 +684,59 @@ strong {
 
 /* Step 1: Welcome (0s - 1.2s) */
 .caption-1 {
-    animation: showCaption 1.2s ease-in-out 0s forwards;
+    animation: showCaption1 9.24s ease-in-out infinite;
 }
 
 /* Step 2: Issue detected (1.2s - 2.5s) */
 .caption-2 {
-    animation: showCaption 1.3s ease-in-out 1.2s forwards;
+    animation: showCaption2 9.24s ease-in-out infinite;
 }
 
 /* Step 3: Pause - no caption shown */
 
 /* Step 4: Checklist (3s - 7s) */
 .caption-3.checklist {
-    animation: showCaption 4s ease-in-out 3s forwards;
+    animation: showCaption3 9.24s ease-in-out infinite;
     text-align: left;
     padding: 6px 10px;
 }
 
 /* Step 5: All done (7s - 9s) */
 .caption-4 {
-    animation: showCaption 2s ease-in-out 7s forwards;
+    animation: showCaption4 9.24s ease-in-out infinite;
 }
 
-@keyframes showCaption {
-    0% { 
-        opacity: 0; 
-        visibility: visible;
-        transform: translateY(5px); 
-    }
-    15% { 
-        opacity: 1; 
-        transform: translateY(0); 
-    }
-    85% { 
-        opacity: 1; 
-        transform: translateY(0); 
-    }
-    100% { 
-        opacity: 0; 
-        visibility: hidden;
-        transform: translateY(-3px); 
-    }
+/* Individual keyframes for each caption with precise timing */
+@keyframes showCaption1 {
+    0% { opacity: 0; transform: translateY(5px); }
+    2% { opacity: 1; transform: translateY(0); }
+    11% { opacity: 1; transform: translateY(0); }
+    13% { opacity: 0; transform: translateY(-3px); }
+    100% { opacity: 0; }
+}
+
+@keyframes showCaption2 {
+    0%, 13% { opacity: 0; transform: translateY(5px); }
+    15% { opacity: 1; transform: translateY(0); }
+    25% { opacity: 1; transform: translateY(0); }
+    27% { opacity: 0; transform: translateY(-3px); }
+    100% { opacity: 0; }
+}
+
+@keyframes showCaption3 {
+    0%, 32% { opacity: 0; transform: translateY(5px); }
+    34% { opacity: 1; transform: translateY(0); }
+    73% { opacity: 1; transform: translateY(0); }
+    76% { opacity: 0; transform: translateY(-3px); }
+    100% { opacity: 0; }
+}
+
+@keyframes showCaption4 {
+    0%, 76% { opacity: 0; transform: translateY(5px); }
+    78% { opacity: 1; transform: translateY(0); }
+    96% { opacity: 1; transform: translateY(0); }
+    99% { opacity: 0; transform: translateY(-3px); }
+    100% { opacity: 0; }
 }
 
 /* Checklist Styling */
@@ -741,9 +752,9 @@ strong {
     align-items: center;
     gap: 4px;
     font-size: 0.45rem;
+    color: #ffffff;
+    transform: translateX(0);
     opacity: 0;
-    color: rgba(255, 255, 255, 0.7);
-    transform: translateX(-3px);
 }
 
 .check-icon {
@@ -752,38 +763,41 @@ strong {
     font-size: 0.5rem;
 }
 
-/* Staggered check item animations - appear one by one within the checklist window */
+/* Staggered check item animations - infinite loop synced with video */
 .check-1 {
-    animation: showCheckItem 3.2s ease-out 3.2s forwards;
+    animation: showCheck1 9.24s ease-out infinite;
 }
 
 .check-2 {
-    animation: showCheckItem 2.4s ease-out 4s forwards;
+    animation: showCheck2 9.24s ease-out infinite;
 }
 
 .check-3 {
-    animation: showCheckItem 1.6s ease-out 4.8s forwards;
+    animation: showCheck3 9.24s ease-out infinite;
 }
 
-@keyframes showCheckItem {
-    0% { 
-        opacity: 0; 
-        transform: translateX(-3px); 
-    }
-    20% { 
-        opacity: 1; 
-        transform: translateX(0); 
-        color: #ffffff;
-    }
-    80% { 
-        opacity: 1; 
-        transform: translateX(0); 
-        color: #ffffff;
-    }
-    100% { 
-        opacity: 0; 
-        transform: translateX(0); 
-    }
+@keyframes showCheck1 {
+    0%, 34% { opacity: 0; transform: translateX(-3px); }
+    37% { opacity: 1; transform: translateX(0); }
+    73% { opacity: 1; transform: translateX(0); }
+    76% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes showCheck2 {
+    0%, 42% { opacity: 0; transform: translateX(-3px); }
+    45% { opacity: 1; transform: translateX(0); }
+    73% { opacity: 1; transform: translateX(0); }
+    76% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes showCheck3 {
+    0%, 50% { opacity: 0; transform: translateX(-3px); }
+    53% { opacity: 1; transform: translateX(0); }
+    73% { opacity: 1; transform: translateX(0); }
+    76% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 /* Reset animation for looping - handled by JS */
